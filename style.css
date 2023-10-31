@@ -1,0 +1,142 @@
+@import url("./variable.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* header section */
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-white);
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 86px;
+}
+.container .logo {
+  padding: 0px 26px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 3px solid #eeeeee;
+}
+.location,
+.search-bar,
+.login,
+.cart {
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+.location .location-title {
+  font-size: 22px;
+  font-weight: var(--fw-800);
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+.location .location-desc {
+  font-size: 10px;
+}
+.location .fa-caret-down {
+  transform: translateY(-2px);
+  margin-left: 5px;
+}
+
+.search-bar {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 12px;
+  background: var(--color-grey-2);
+  color: var(--color-grey);
+  width: 38%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+.search-bar .search-input {
+  width: 100%;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+  align-items: center;
+}
+
+.search-bar .fa-magnifying-glass {
+  width: 20px;
+  color: var(--color-black);
+}
+
+.login > a {
+  font-size: 18px;
+  color: var(--color-grey-3);
+  font-weight: var(--fw-400);
+  text-decoration: none;
+}
+
+.container .cart .fa-cart-shopping {
+  margin-inline: 5px;
+  cursor: pointer;
+}
+.container .cart > button {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: var(--fw-700);
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* main section */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+.main-container {
+  max-width: 90%;
+}
+
+.main-container .banner-1 .img {
+  max-width: 100%;
+  height: 100%;
+}
+.main-container .banner-2 {
+  display: flex;
+  gap: 20px;
+  overflow: auto scroll;
+  margin: 0 14px;
+}
+
+.banner-2 .banner-img img{
+    height: 165px;
+    width: 285px;
+}
+
+.banner-2::-webkit-scrollbar{
+    display: none;
+}
