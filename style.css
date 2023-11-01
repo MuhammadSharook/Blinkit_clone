@@ -287,4 +287,7 @@ footer {
     .items .title a {
       font-size: 100%;
     }
+    .section-3-img img {
+      width: 160px;
+    }
 }
