@@ -290,4 +290,12 @@ footer {
     .section-3-img img {
       width: 160px;
     }
+
+    .list-items .item{
+      width: 248px;
+    }
+    .item .item-img img{
+      width: 200px;
+    }
 }
+
